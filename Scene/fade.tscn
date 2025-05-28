@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://b2d48gupmwec1"]
+
+[ext_resource type="Script" uid="uid://ds8guha1gha73" path="res://Scene/fade.gd" id="1_dvms3"]
+
+[node name="Fade" type="CanvasLayer"]
+script = ExtResource("1_dvms3")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+top_level = true
+visibility_layer = 1036286
+z_index = 100
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(29.4851, 16.853)
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true

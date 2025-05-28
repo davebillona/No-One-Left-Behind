@@ -1,22 +1,22 @@
-[gd_scene load_steps=23 format=4 uid="uid://bb8av7liye0se"]
+[gd_scene load_steps=23 format=4 uid="uid://dos2c621x4utq"]
 
-[ext_resource type="Script" uid="uid://dbjep3rn6qo8r" path="res://Script/lvl1.gd" id="1_0sxm5"]
-[ext_resource type="PackedScene" uid="uid://ldwha71wmft3" path="res://Scene/background.tscn" id="1_75buv"]
-[ext_resource type="PackedScene" uid="uid://dt6m4ajms4fe" path="res://Scene/player.tscn" id="1_f6udf"]
-[ext_resource type="Texture2D" uid="uid://b30jyvivuyrq7" path="res://Assets/TileSet/SimpleTiles_allColors.png" id="2_r34rm"]
-[ext_resource type="Texture2D" uid="uid://d0xgfwskfuvb2" path="res://Assets/bg.webp" id="2_sblpm"]
-[ext_resource type="Texture2D" uid="uid://pgvlest7l7xv" path="res://Assets/tilemap_packed.png" id="3_2wwxx"]
-[ext_resource type="PackedScene" uid="uid://c4xyl4hnu5res" path="res://Scene/door.tscn" id="5_1xcnr"]
-[ext_resource type="Texture2D" uid="uid://du7an3s787we8" path="res://Assets/Free/Terrain/Terrain (16x16).png" id="5_c2iwn"]
-[ext_resource type="PackedScene" uid="uid://b5vm7idboryiw" path="res://Scene/detect.tscn" id="7_ow1sv"]
-[ext_resource type="PackedScene" uid="uid://blr8jiu0u27gb" path="res://Scene/spike.tscn" id="10_7y4ci"]
-[ext_resource type="FontFile" uid="uid://b5rm7pn7cdiwr" path="res://Assets/Font/Nexa-Heavy.ttf" id="11_mxd2g"]
-[ext_resource type="Texture2D" uid="uid://g5e1e0fpyb1u" path="res://Assets/Spritesheet/sheet_white1x.png" id="12_0sxm5"]
-[ext_resource type="Texture2D" uid="uid://c4mt5x6maaj6t" path="res://Assets/Spritesheet/sheet_white2x.png" id="13_hspdg"]
-[ext_resource type="Script" uid="uid://dsvsa7e1lok7n" path="res://Script/arrow.gd" id="14_j63at"]
+[ext_resource type="Script" uid="uid://dbjep3rn6qo8r" path="res://Script/lvl1.gd" id="1_v4hrh"]
+[ext_resource type="PackedScene" uid="uid://ldwha71wmft3" path="res://Scene/background.tscn" id="2_qy5n2"]
+[ext_resource type="Texture2D" uid="uid://d0xgfwskfuvb2" path="res://Assets/bg.webp" id="3_tyjh3"]
+[ext_resource type="Texture2D" uid="uid://b30jyvivuyrq7" path="res://Assets/TileSet/SimpleTiles_allColors.png" id="4_4ieu7"]
+[ext_resource type="Texture2D" uid="uid://pgvlest7l7xv" path="res://Assets/tilemap_packed.png" id="5_xi80a"]
+[ext_resource type="Texture2D" uid="uid://du7an3s787we8" path="res://Assets/Free/Terrain/Terrain (16x16).png" id="6_flc8y"]
+[ext_resource type="PackedScene" uid="uid://dt6m4ajms4fe" path="res://Scene/player.tscn" id="7_nka1b"]
+[ext_resource type="PackedScene" uid="uid://c4xyl4hnu5res" path="res://Scene/door.tscn" id="8_mc6pd"]
+[ext_resource type="PackedScene" uid="uid://b5vm7idboryiw" path="res://Scene/detect.tscn" id="9_itlhw"]
+[ext_resource type="PackedScene" uid="uid://blr8jiu0u27gb" path="res://Scene/spike.tscn" id="10_s481w"]
+[ext_resource type="Texture2D" uid="uid://g5e1e0fpyb1u" path="res://Assets/Spritesheet/sheet_white1x.png" id="11_odm6d"]
+[ext_resource type="FontFile" uid="uid://b5rm7pn7cdiwr" path="res://Assets/Font/Nexa-Heavy.ttf" id="12_am3fh"]
+[ext_resource type="Texture2D" uid="uid://c4mt5x6maaj6t" path="res://Assets/Spritesheet/sheet_white2x.png" id="13_m728u"]
+[ext_resource type="Script" uid="uid://dsvsa7e1lok7n" path="res://Script/arrow.gd" id="14_06ouv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r34rm"]
-texture = ExtResource("2_sblpm")
+texture = ExtResource("3_tyjh3")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -790,7 +790,7 @@ texture = ExtResource("2_sblpm")
 sources/0 = SubResource("TileSetAtlasSource_r34rm")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3pt4j"]
-texture = ExtResource("2_r34rm")
+texture = ExtResource("4_4ieu7")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -1319,7 +1319,7 @@ texture = ExtResource("2_r34rm")
 23:19/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7y4ci"]
-texture = ExtResource("3_2wwxx")
+texture = ExtResource("5_xi80a")
 texture_region_size = Vector2i(18, 18)
 0:0/0 = 0
 1:0/0 = 0
@@ -1550,7 +1550,7 @@ texture_region_size = Vector2i(18, 18)
 21:9/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mxd2g"]
-texture = ExtResource("5_c2iwn")
+texture = ExtResource("6_flc8y")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:0/0 = 0
@@ -1797,17 +1797,17 @@ sources/1 = SubResource("TileSetAtlasSource_7y4ci")
 sources/3 = SubResource("TileSetAtlasSource_mxd2g")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hspdg"]
-atlas = ExtResource("12_0sxm5")
+atlas = ExtResource("11_odm6d")
 region = Rect2(360, 9, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6njx3"]
-atlas = ExtResource("13_hspdg")
+atlas = ExtResource("13_m728u")
 region = Rect2(22, 1216, 56, 68)
 
-[node name="Lvl 1" type="Node2D"]
-script = ExtResource("1_0sxm5")
+[node name="Lvl 2" type="Node2D"]
+script = ExtResource("1_v4hrh")
 
-[node name="Background" parent="." instance=ExtResource("1_75buv")]
+[node name="Background" parent="." instance=ExtResource("2_qy5n2")]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 visible = false
@@ -1821,11 +1821,11 @@ position = Vector2(0, 62)
 tile_map_data = PackedByteArray("AAAJAAEAAwABAAUAAAAKAAEAAwADAAQAAAALAAEAAwABAAYAAAAMAAEAAwABAAYAAAANAAEAAwABAAYAAAAOAAEAAwABAAYAAAAPAAEAAwABAAYAAAAQAAEAAwABAAYAAAARAAEAAwABAAYAAAASAAEAAwABAAYAAAATAAEAAwABAAYAAAAUAAEAAwABAAYAAAAVAAEAAwABAAYAAAAWAAEAAwABAAYAAAAXAAEAAwABAAYAAAAYAAEAAwABAAYAAAAZAAEAAwABAAYAAAAaAAEAAwABAAYAAAAbAAEAAwABAAYAAAAcAAEAAwABAAYAAAAdAAEAAwABAAYAAAAeAAEAAwABAAYAAAAfAAEAAwABAAYAAAAgAAEAAwABAAYAAAAhAAEAAwABAAYAAAAiAAEAAwABAAYAAAAjAAEAAwABAAYAAAAkAAEAAwABAAYAAAAlAAEAAwABAAYAAAAmAAEAAwABAAYAAAAnAAEAAwABAAYAAAAoAAEAAwABAAYAAAApAAEAAwABAAYAAAAqAAEAAwABAAYAAAArAAEAAwABAAYAAAAsAAEAAwABAAYAAAAtAAEAAwABAAYAAAAuAAEAAwABAAYAAAAvAAEAAwABAAYAAAAwAAEAAwABAAYAAAAxAAEAAwABAAYAAAAyAAEAAwABAAYAAAAzAAEAAwABAAYAAAA0AAEAAwABAAYAAAA1AAEAAwABAAYAAAA2AAEAAwABAAYAAAA3AAEAAwABAAYAAAA4AAEAAwAAAAEAAAA5AAkAAwABAAUAAAA5AAoAAwABAAUAAAA5AAsAAwABAAUAAAA5AAwAAwABAAUAAAA5AA0AAwABAAUAAAA5ABgAAwABAAUAAAA5ABkAAwABAAUAAAA5ABoAAwABAAUAAAA5ABsAAwABAAUAAAALABsAAwABAAAAAAAMABsAAwABAAAAAAANABsAAwABAAAAAAAOABsAAwABAAAAAAAPABsAAwABAAAAAAAQABsAAwABAAAAAAARABsAAwABAAAAAAASABsAAwABAAAAAAATABsAAwABAAAAAAAUABsAAwABAAAAAAAVABsAAwABAAAAAAAWABsAAwABAAAAAAAXABsAAwABAAAAAAAYABsAAwABAAAAAAAZABsAAwABAAAAAAAaABsAAwABAAAAAAAbABsAAwABAAAAAAAcABsAAwABAAAAAAAdABsAAwABAAAAAAAeABsAAwABAAAAAAAfABsAAwABAAAAAAAgABsAAwABAAAAAAAhABsAAwABAAAAAAAiABsAAwABAAAAAAAjABsAAwABAAAAAAAkABsAAwABAAAAAAAlABsAAwABAAAAAAAmABsAAwABAAAAAAAnABsAAwABAAAAAAAoABsAAwABAAAAAAApABsAAwABAAAAAAAqABsAAwABAAAAAAArABsAAwABAAAAAAAsABsAAwABAAAAAAAtABsAAwABAAAAAAAuABsAAwABAAAAAAAvABsAAwABAAAAAAAwABsAAwABAAAAAAAxABsAAwABAAAAAAAyABsAAwABAAAAAAAzABsAAwABAAAAAAA0ABsAAwABAAAAAAA1ABsAAwABAAAAAAA2ABsAAwABAAAAAAA3ABsAAwABAAAAAAA4ABsAAwAAAAEAAAAJABsAAwABAAUAAAAKABsAAwABAAAAAAAJAAIAAwABAAUAAAAJAAMAAwABAAUAAAAJAAQAAwABAAUAAAAJAAUAAwABAAUAAAAJAAYAAwABAAUAAAAJAAcAAwABAAUAAAAJAAgAAwABAAUAAAAJAAkAAwABAAUAAAAJAAoAAwABAAUAAAAJAAsAAwABAAUAAAAJAAwAAwABAAUAAAAJAA0AAwABAAUAAAAJAA4AAwABAAUAAAAJAA8AAwABAAUAAAAJABAAAwABAAUAAAAJABEAAwABAAUAAAAJABIAAwABAAUAAAAJABMAAwABAAUAAAAJABQAAwABAAUAAAAJABUAAwABAAUAAAAJABYAAwABAAUAAAAJABcAAwABAAUAAAAJABgAAwABAAUAAAAJABkAAwABAAUAAAAJABoAAwABAAUAAAAKABwAAwABAAUAAAALABwAAwABAAUAAAAMABwAAwABAAUAAAANABwAAwABAAUAAAAOABwAAwABAAUAAAAPABwAAwABAAUAAAAQABwAAwABAAUAAAARABwAAwABAAUAAAASABwAAwABAAUAAAATABwAAwABAAUAAAAUABwAAwABAAUAAAAVABwAAwABAAUAAAAWABwAAwABAAUAAAAXABwAAwABAAUAAAAYABwAAwABAAUAAAAZABwAAwABAAUAAAAaABwAAwABAAUAAAAbABwAAwABAAUAAAAcABwAAwABAAUAAAAdABwAAwABAAUAAAAeABwAAwABAAUAAAAfABwAAwABAAUAAAAgABwAAwABAAUAAAAhABwAAwABAAUAAAAiABwAAwABAAUAAAAjABwAAwABAAUAAAAkABwAAwABAAUAAAAlABwAAwABAAUAAAAmABwAAwABAAUAAAAnABwAAwABAAUAAAAoABwAAwABAAUAAAApABwAAwABAAUAAAAqABwAAwABAAUAAAArABwAAwABAAUAAAAsABwAAwABAAUAAAAtABwAAwABAAUAAAAuABwAAwABAAUAAAAvABwAAwABAAUAAAAwABwAAwABAAUAAAAxABwAAwABAAUAAAAyABwAAwABAAUAAAAzABwAAwABAAUAAAA0ABwAAwABAAUAAAA1ABwAAwABAAUAAAA2ABwAAwABAAUAAAA3ABwAAwABAAUAAAA4ABwAAwABAAUAAAA5ABwAAwABAAUAAAAJABwAAwABAAUAAAAKAAIAAwACAAUAAAAKAAMAAwACAAUAAAAKAAQAAwACAAUAAAAKAAUAAwACAAUAAAAKAAYAAwACAAUAAAAKAAcAAwACAAUAAAAKAAgAAwACAAUAAAAKAAkAAwACAAUAAAAKAAoAAwACAAUAAAAKAAsAAwACAAUAAAAKAAwAAwACAAUAAAAKAA0AAwACAAUAAAAKAA4AAwACAAUAAAAKAA8AAwACAAUAAAAKABAAAwACAAUAAAAKABEAAwACAAUAAAAKABIAAwACAAUAAAAKABMAAwACAAUAAAAKABQAAwACAAUAAAAKABUAAwACAAUAAAAKABYAAwACAAUAAAAKABcAAwACAAUAAAAKABgAAwACAAUAAAAKABkAAwACAAUAAAAKABoAAwACAAUAAAA4AAIAAwAAAAEAAAA4AAMAAwAAAAEAAAA4AAQAAwAAAAEAAAA4AAUAAwAAAAEAAAA4AAYAAwAAAAEAAAA4AAcAAwAAAAEAAAA4AAgAAwAAAAEAAAA4AA4AAwAAAAEAAAA4AA8AAwAAAAEAAAA4ABAAAwAAAAEAAAA4ABEAAwAAAAEAAAA4ABIAAwAAAAEAAAA4ABMAAwAAAAEAAAA4ABQAAwAAAAEAAAA4ABUAAwAAAAEAAAA4ABYAAwAAAAEAAAA4ABcAAwAAAAEAAAA4ABgAAwAAAAEAAAA4ABkAAwAAAAEAAAA4ABoAAwAAAAEAAAA5AAEAAwABAAUAAAA5AAIAAwABAAUAAAA5AAMAAwABAAUAAAA5AAQAAwABAAUAAAA5AAUAAwABAAUAAAA5AAYAAwABAAUAAAA5AAcAAwABAAUAAAA5AAgAAwABAAUAAAA4AAkAAwAAAAEAAAA4AAoAAwAAAAEAAAA4AAsAAwAAAAEAAAA4AAwAAwAAAAEAAAA4AA0AAwAAAAEAAAA5AA4AAwABAAUAAAA5AA8AAwABAAUAAAA5ABAAAwABAAUAAAA5ABEAAwABAAUAAAA5ABIAAwABAAUAAAA5ABMAAwABAAUAAAA5ABQAAwABAAUAAAA5ABUAAwABAAUAAAA5ABYAAwABAAUAAAA5ABcAAwABAAUAAAA=")
 tile_set = SubResource("TileSet_3amdw")
 
-[node name="Player" parent="." instance=ExtResource("1_f6udf")]
+[node name="Player" parent="." instance=ExtResource("7_nka1b")]
 z_index = 1
 position = Vector2(199, 474)
 
-[node name="Player2" parent="." instance=ExtResource("1_f6udf")]
+[node name="Player2" parent="." instance=ExtResource("7_nka1b")]
 z_index = 1
 position = Vector2(301, 474)
 
@@ -1833,14 +1833,14 @@ position = Vector2(301, 474)
 position = Vector2(538, 297)
 zoom = Vector2(1.5, 1.5)
 
-[node name="Door" parent="." instance=ExtResource("5_1xcnr")]
+[node name="Door" parent="." instance=ExtResource("8_mc6pd")]
 position = Vector2(863, 468)
 scale = Vector2(1.64, 1.64)
 
-[node name="Detect" parent="." instance=ExtResource("7_ow1sv")]
+[node name="Detect" parent="." instance=ExtResource("9_itlhw")]
 visible = false
 
-[node name="Spike" parent="." instance=ExtResource("10_7y4ci")]
+[node name="Spike" parent="." instance=ExtResource("10_s481w")]
 position = Vector2(424, 486)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -1852,6 +1852,7 @@ offset_right = 1081.0
 offset_bottom = 73.0
 scale = Vector2(1.66543, 1.66543)
 texture_normal = SubResource("AtlasTexture_hspdg")
+metadata/_edit_use_anchors_ = true
 
 [node name="CenterContainer" type="CenterContainer" parent="CanvasLayer"]
 anchors_preset = 5
@@ -1866,9 +1867,9 @@ grow_horizontal = 2
 [node name="Label" type="Label" parent="CanvasLayer/CenterContainer"]
 layout_mode = 2
 size_flags_vertical = 0
-theme_override_fonts/font = ExtResource("11_mxd2g")
+theme_override_fonts/font = ExtResource("12_am3fh")
 theme_override_font_sizes/font_size = 54
-text = "Level 1"
+text = "Level 2"
 horizontal_alignment = 1
 
 [node name="PopupUI" type="Control" parent="."]
@@ -1889,4 +1890,4 @@ color = Color(0, 0, 0, 0.537255)
 position = Vector2(863, 431)
 scale = Vector2(0.395944, 0.395944)
 texture = SubResource("AtlasTexture_6njx3")
-script = ExtResource("14_j63at")
+script = ExtResource("14_06ouv")

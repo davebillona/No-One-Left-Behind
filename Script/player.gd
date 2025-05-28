@@ -11,6 +11,8 @@ var can_move: bool = true
 var is_dead: bool = false
 
 func _ready():
+	add_to_group("player")  # <-- Add this line
+
 	SignalBus.player_died.connect(_on_player_died)
 
 func _physics_process(delta: float) -> void:
@@ -47,7 +49,6 @@ func _physics_process(delta: float) -> void:
 func die():
 	if is_dead: 
 		return
-	
 	is_dead = true
 	can_move = false
 	sprite.play("die")

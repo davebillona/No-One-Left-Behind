@@ -8,6 +8,7 @@ var popup_instance: Control = null
 
 func _ready():
 	menu_btn.pressed.connect(_on_menu_btn_pressed)
+	await Fade.fade_out(1.0)
 
 func _on_menu_btn_pressed():
 	grey_overlay.visible = true
@@ -39,3 +40,6 @@ func _on_restart_pressed():
 
 	# Hide overlay
 	grey_overlay.visible = false
+
+func get_next_level_path() -> String:
+	return "res://scene/lvl2.tscn"
