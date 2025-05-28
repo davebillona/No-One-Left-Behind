@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://b5vm7idboryiw"]
+
+[ext_resource type="Script" uid="uid://68l3ef5cc8d1" path="res://Script/detect.gd" id="1_o4lmy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ya1y"]
+size = Vector2(57.3965, 654)
+
+[node name="Detect" type="Area2D"]
+script = ExtResource("1_o4lmy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(588, 317)
+scale = Vector2(20.28, 1)
+shape = SubResource("RectangleShape2D_8ya1y")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 23.0
