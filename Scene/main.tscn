@@ -1,7 +1,7 @@
 [gd_scene load_steps=23 format=4 uid="uid://bb8av7liye0se"]
 
 [ext_resource type="Script" uid="uid://dbjep3rn6qo8r" path="res://Script/lvl1.gd" id="1_0sxm5"]
-[ext_resource type="PackedScene" uid="uid://ldwha71wmft3" path="res://Scene/background.tscn" id="1_75buv"]
+[ext_resource type="PackedScene" uid="uid://ldwha71wmft3" path="res://Scene/backgroundbrown.tscn" id="1_75buv"]
 [ext_resource type="PackedScene" uid="uid://dt6m4ajms4fe" path="res://Scene/player.tscn" id="1_f6udf"]
 [ext_resource type="Texture2D" uid="uid://b30jyvivuyrq7" path="res://Assets/TileSet/SimpleTiles_allColors.png" id="2_r34rm"]
 [ext_resource type="Texture2D" uid="uid://d0xgfwskfuvb2" path="res://Assets/bg.webp" id="2_sblpm"]
@@ -9,10 +9,10 @@
 [ext_resource type="PackedScene" uid="uid://c4xyl4hnu5res" path="res://Scene/door.tscn" id="5_1xcnr"]
 [ext_resource type="Texture2D" uid="uid://du7an3s787we8" path="res://Assets/Free/Terrain/Terrain (16x16).png" id="5_c2iwn"]
 [ext_resource type="PackedScene" uid="uid://b5vm7idboryiw" path="res://Scene/detect.tscn" id="7_ow1sv"]
-[ext_resource type="PackedScene" uid="uid://blr8jiu0u27gb" path="res://Scene/spike.tscn" id="10_7y4ci"]
 [ext_resource type="FontFile" uid="uid://b5rm7pn7cdiwr" path="res://Assets/Font/Nexa-Heavy.ttf" id="11_mxd2g"]
 [ext_resource type="Texture2D" uid="uid://g5e1e0fpyb1u" path="res://Assets/Spritesheet/sheet_white1x.png" id="12_0sxm5"]
 [ext_resource type="Texture2D" uid="uid://c4mt5x6maaj6t" path="res://Assets/Spritesheet/sheet_white2x.png" id="13_hspdg"]
+[ext_resource type="PackedScene" uid="uid://bke7rerql0mnc" path="res://Scene/yellowspike.tscn" id="14_hspdg"]
 [ext_resource type="Script" uid="uid://dsvsa7e1lok7n" path="res://Script/arrow.gd" id="14_j63at"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r34rm"]
@@ -1823,11 +1823,7 @@ tile_set = SubResource("TileSet_3amdw")
 
 [node name="Player" parent="." instance=ExtResource("1_f6udf")]
 z_index = 1
-position = Vector2(199, 474)
-
-[node name="Player2" parent="." instance=ExtResource("1_f6udf")]
-z_index = 1
-position = Vector2(301, 474)
+position = Vector2(215, 474)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(538, 297)
@@ -1839,9 +1835,6 @@ scale = Vector2(1.64, 1.64)
 
 [node name="Detect" parent="." instance=ExtResource("7_ow1sv")]
 visible = false
-
-[node name="Spike" parent="." instance=ExtResource("10_7y4ci")]
-position = Vector2(424, 486)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -1890,3 +1883,12 @@ position = Vector2(863, 431)
 scale = Vector2(0.395944, 0.395944)
 texture = SubResource("AtlasTexture_6njx3")
 script = ExtResource("14_j63at")
+
+[node name="Spike2" parent="." instance=ExtResource("14_hspdg")]
+position = Vector2(380, 486)
+
+[node name="Spike3" parent="." instance=ExtResource("14_hspdg")]
+position = Vector2(536, 486)
+
+[node name="Spike4" parent="." instance=ExtResource("14_hspdg")]
+position = Vector2(716, 486)

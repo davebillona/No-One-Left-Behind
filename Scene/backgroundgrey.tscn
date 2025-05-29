@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://bnhmk46a2ql0v"]
+
+[ext_resource type="Shader" uid="uid://ck8cpkn5koylt" path="res://Script/bg.gdshader" id="1_nl81e"]
+[ext_resource type="Texture2D" uid="uid://bhas8rypftvuv" path="res://Assets/Free/Background/Gray.png" id="2_nl81e"]
+[ext_resource type="Script" uid="uid://bght88qcbhv5p" path="res://Script/background.gd" id="3_4mhnf"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_g008t"]
+shader = ExtResource("1_nl81e")
+shader_parameter/scroll_speed = 100.0
+shader_parameter/time_passed = 0.0
+
+[node name="Background" type="Sprite2D"]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_g008t")
+position = Vector2(589, 316)
+scale = Vector2(1.68, 1.3125)
+texture = ExtResource("2_nl81e")
+region_enabled = true
+region_rect = Rect2(0, 0, 700, 550)
+script = ExtResource("3_4mhnf")

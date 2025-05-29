@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://cw3l1jrrj4b5g"]
+
+[ext_resource type="Shader" uid="uid://ck8cpkn5koylt" path="res://Script/bg.gdshader" id="1_c34i2"]
+[ext_resource type="Texture2D" uid="uid://ccgksoupvfx85" path="res://Assets/Free/Background/Purple.png" id="2_c34i2"]
+[ext_resource type="Script" uid="uid://bght88qcbhv5p" path="res://Script/background.gd" id="3_02j3p"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_g008t"]
+shader = ExtResource("1_c34i2")
+shader_parameter/scroll_speed = 100.0
+shader_parameter/time_passed = 0.0
+
+[node name="Background" type="Sprite2D"]
+texture_repeat = 2
+material = SubResource("ShaderMaterial_g008t")
+position = Vector2(589, 316)
+scale = Vector2(1.68, 1.3125)
+texture = ExtResource("2_c34i2")
+region_enabled = true
+region_rect = Rect2(0, 0, 700, 550)
+script = ExtResource("3_02j3p")

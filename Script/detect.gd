@@ -34,7 +34,7 @@ func _on_body_exited(body: Node) -> void:
 		
 		# Proceed only if all characters have left (not due to player death)
 		if characters_in_area.size() == 0:
-			await get_tree().create_timer(1.0).timeout
+			#await get_tree().create_timer(0.5).timeout
 			call_deferred("_next_level")
 
 func _update_label() -> void:
@@ -44,7 +44,7 @@ func _next_level():
 	var level_node = get_parent()
 	if level_node.has_method("get_next_level_path"):
 		var next_scene = level_node.get_next_level_path()
-		await Fade.fade_in(1.0)
+		await Fade.fade_in(0.7)
 		
 		var tree = Engine.get_main_loop()
 		if tree:

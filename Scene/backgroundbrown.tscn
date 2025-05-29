@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://ldwha71wmft3"]
 
 [ext_resource type="Shader" uid="uid://ck8cpkn5koylt" path="res://Script/bg.gdshader" id="1_aupk8"]
-[ext_resource type="Texture2D" uid="uid://cidmjbbtfj5cg" path="res://Assets/Free/Background/Blue.png" id="2_2tbj5"]
+[ext_resource type="Texture2D" uid="uid://ctfs2h5qug0ja" path="res://Assets/Free/Background/Brown.png" id="2_nejkn"]
 [ext_resource type="Script" uid="uid://bght88qcbhv5p" path="res://Script/background.gd" id="3_2tbj5"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_g008t"]
@@ -14,7 +14,7 @@ texture_repeat = 2
 material = SubResource("ShaderMaterial_g008t")
 position = Vector2(589, 316)
 scale = Vector2(1.68, 1.3125)
-texture = ExtResource("2_2tbj5")
+texture = ExtResource("2_nejkn")
 region_enabled = true
 region_rect = Rect2(0, 0, 700, 550)
 script = ExtResource("3_2tbj5")

@@ -24,7 +24,11 @@ func _physics_process(delta: float) -> void:
 		# Process movement input only when allowed
 		var direction = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
 		velocity.x = direction * speed
-		
+
+		# Flip the sprite left or right
+		if direction != 0:
+			sprite.flip_h = direction < 0
+
 		# Jumping
 		if Input.is_action_just_pressed("jump") and is_on_floor():
 			velocity.y = jump_velocity
@@ -45,6 +49,7 @@ func _physics_process(delta: float) -> void:
 
 	# Always move and slide regardless of can_move state
 	move_and_slide()
+
 
 func die():
 	if is_dead: 

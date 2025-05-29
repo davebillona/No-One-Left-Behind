@@ -14,7 +14,7 @@ border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0.588235, 0.588235, 0.639216, 1)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hfj2n"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wshwd"]
 texture = ExtResource("5_gkrgk")
 0:0/0 = 0
 1:0/0 = 0
@@ -66,7 +66,7 @@ texture = ExtResource("5_gkrgk")
 11:3/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_5igi7"]
-sources/0 = SubResource("TileSetAtlasSource_hfj2n")
+sources/0 = SubResource("TileSetAtlasSource_wshwd")
 
 [node name="Control" type="Control"]
 z_index = 2
@@ -177,7 +177,7 @@ theme_override_font_sizes/font_size = 300
 text = "S              "
 horizontal_alignment = 1
 
-[node name="SettingsButton2" type="TextureButton" parent="CanvasLayer/Panel"]
+[node name="MainMenu" type="TextureButton" parent="CanvasLayer/Panel"]
 layout_mode = 0
 offset_left = 7.0855
 offset_top = 25.4458
@@ -187,7 +187,7 @@ scale = Vector2(0.129154, 0.0924125)
 action_mode = 0
 texture_normal = ExtResource("2_wshwd")
 
-[node name="Restart" type="Label" parent="CanvasLayer/Panel/SettingsButton2"]
+[node name="Restart" type="Label" parent="CanvasLayer/Panel/MainMenu"]
 layout_mode = 0
 offset_left = 55.5253
 offset_top = 19.0195
@@ -202,7 +202,7 @@ theme_override_font_sizes/font_size = 300
 text = "  AIN MENU"
 horizontal_alignment = 1
 
-[node name="Restart2" type="Label" parent="CanvasLayer/Panel/SettingsButton2"]
+[node name="Restart2" type="Label" parent="CanvasLayer/Panel/MainMenu"]
 layout_mode = 0
 offset_left = 30.9075
 offset_top = 13.056

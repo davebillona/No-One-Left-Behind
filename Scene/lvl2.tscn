@@ -1,7 +1,7 @@
-[gd_scene load_steps=23 format=4 uid="uid://dos2c621x4utq"]
+[gd_scene load_steps=20 format=4 uid="uid://dos2c621x4utq"]
 
 [ext_resource type="Script" uid="uid://dbjep3rn6qo8r" path="res://Script/lvl1.gd" id="1_v4hrh"]
-[ext_resource type="PackedScene" uid="uid://ldwha71wmft3" path="res://Scene/background.tscn" id="2_qy5n2"]
+[ext_resource type="PackedScene" uid="uid://buixmr0gwv3mh" path="res://Scene/backgroundgreen.tscn" id="2_v4hrh"]
 [ext_resource type="Texture2D" uid="uid://d0xgfwskfuvb2" path="res://Assets/bg.webp" id="3_tyjh3"]
 [ext_resource type="Texture2D" uid="uid://b30jyvivuyrq7" path="res://Assets/TileSet/SimpleTiles_allColors.png" id="4_4ieu7"]
 [ext_resource type="Texture2D" uid="uid://pgvlest7l7xv" path="res://Assets/tilemap_packed.png" id="5_xi80a"]
@@ -12,8 +12,6 @@
 [ext_resource type="PackedScene" uid="uid://blr8jiu0u27gb" path="res://Scene/spike.tscn" id="10_s481w"]
 [ext_resource type="Texture2D" uid="uid://g5e1e0fpyb1u" path="res://Assets/Spritesheet/sheet_white1x.png" id="11_odm6d"]
 [ext_resource type="FontFile" uid="uid://b5rm7pn7cdiwr" path="res://Assets/Font/Nexa-Heavy.ttf" id="12_am3fh"]
-[ext_resource type="Texture2D" uid="uid://c4mt5x6maaj6t" path="res://Assets/Spritesheet/sheet_white2x.png" id="13_m728u"]
-[ext_resource type="Script" uid="uid://dsvsa7e1lok7n" path="res://Script/arrow.gd" id="14_06ouv"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r34rm"]
 texture = ExtResource("3_tyjh3")
@@ -1800,14 +1798,10 @@ sources/3 = SubResource("TileSetAtlasSource_mxd2g")
 atlas = ExtResource("11_odm6d")
 region = Rect2(360, 9, 32, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_6njx3"]
-atlas = ExtResource("13_m728u")
-region = Rect2(22, 1216, 56, 68)
-
 [node name="Lvl 2" type="Node2D"]
 script = ExtResource("1_v4hrh")
 
-[node name="Background" parent="." instance=ExtResource("2_qy5n2")]
+[node name="Background" parent="." instance=ExtResource("2_v4hrh")]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 visible = false
@@ -1885,9 +1879,3 @@ offset_right = 40.0
 offset_bottom = 40.0
 scale = Vector2(28.9016, 16.2616)
 color = Color(0, 0, 0, 0.537255)
-
-[node name="arrow" type="Sprite2D" parent="."]
-position = Vector2(863, 431)
-scale = Vector2(0.395944, 0.395944)
-texture = SubResource("AtlasTexture_6njx3")
-script = ExtResource("14_06ouv")
